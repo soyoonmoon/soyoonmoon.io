@@ -1,0 +1,151 @@
+section#about-me {
+    padding: 40px 0;
+    font-family: IBM Plex Mono;
+    font-weight: 400;
+}
+
+section#about-me h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section#about-me p {
+    margin-bottom: 15px;
+}
+
+body, h1, h2, h3, h4, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: IBM Plex Mono;
+    /* letter-spacing: -1px; */
+    font-weight: 400;
+}
+
+header {
+    background: #FFF;
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
+}
+
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: larger;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.experience {
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 0px;
+}
+
+.experience h4 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.experience ul {
+    list-style-type: disc; /* This will add the default disc-style bullet points */
+    padding-left: 20px; /* Add padding to align the bullets properly */
+}
+
+.experience li {
+    margin-bottom: 5px;
+    /* Remove the background image and padding-left properties if you want default bullets */
+}
+
+header .header-container, section {
+    width: 90%;
+    margin: 0 auto; /* This will add margin to the left and right */
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: inline-block; /* Change display to inline-block */
+    border-bottom: 2px solid #000; 
+    padding-bottom: 5px; /* Adjust padding to control the space between text and line */
+}
+
+.portfolio-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px;
+}
+
+.box-container {
+    width: calc(50% - 20px); /* Now 50% to have 2 boxes per row */
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box {
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    /* Maintain the aspect ratio as a square */
+    padding-top: calc(50% - 20px); /* Adjust this value to keep the square aspect ratio */
+    position: relative;
+}
+
+/* Content inside the box */
+.box-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Padding for the content */
+}
+
+/* Style for the explanation text */
+.box-explanation {
+    margin-top: 10px; /* Space above the explanation text */
+    font-size: 16px; /* Smaller font size for the explanation text */
+    color: #666; /* A lighter text color for explanations */
+}
+
+/* Responsive adjustment for smaller screens, if needed */
+@media (max-width: 768px) {
+    .box-container {
+        width: 100%; /* Each box container takes full width */
+        padding-top: 100%; /* Adjust the padding-top to maintain the square shape */
+        margin: 10px 0; /* Adjust margin to only top and bottom */
+    }
+}
