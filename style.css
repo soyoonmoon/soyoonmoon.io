@@ -1,7 +1,44 @@
+.about-container {
+    display: flex;
+    justify-content: space-between; /* This will space out the text and image */
+    align-items: center; /* This will vertically align the text and image in the middle */
+}
+
+.about-text, .about-image {
+    flex: 1; /* This will make both the text and image take up equal space */
+    padding: 10px; /* Optional: adds some spacing inside each container */
+}
+
+/* For better control, you can also define specific widths */
+.about-text {
+    max-width: 60%; /* Adjust this percentage as needed */
+}
+
+.about-image {
+    max-width: 40%; /* Adjust this percentage as needed */
+    text-align: right; /* Aligns the image to the right */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack the text and image vertically on small screens */
+    }
+
+    .about-text, .about-image {
+        max-width: 100%; /* Each takes full width on small screens */
+    }
+}
+
+
+
+
+
 section#about-me {
     padding: 40px 0;
     font-family: IBM Plex Mono;
     font-weight: 400;
+    align-items: center;
 }
 
 section#about-me h2 {
@@ -20,7 +57,6 @@ body, h1, h2, h3, h4, ul, li {
 
 body {
     font-family: IBM Plex Mono;
-    /* letter-spacing: -1px; */
     font-weight: 400;
 }
 
