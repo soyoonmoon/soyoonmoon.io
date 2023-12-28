@@ -1,44 +1,49 @@
+.big-intro {
+    /* width: 500px; Adjust as needed */
+    height: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the image */
+    display: flex;
+    margin-bottom: -350px;
+}
+.big-intro #main-photo{
+    margin-left: 50px;
+    width: 450px;
+    height: 500px;
+}
+
+section#about-me h2 {
+    font-size: 24px;
+    margin-bottom: 5px; /* Reduced from 20px to 10px */
+    display: inline-block;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+.big-intro {
+    font-size: 100px;
+    margin-top: 0; /* Add this line to reduce the space above this element */
+    padding: 40px 0;
+    padding-left: 67px;
+    padding-bottom: 20px;
+}
+
 .about-container {
     display: flex;
-    justify-content: space-between; /* This will space out the text and image */
-    align-items: center; /* This will vertically align the text and image in the middle */
+    justify-content: flex-start; /* Aligns content to the start */
+    align-items: center;
 }
 
-.about-text, .about-image {
-    flex: 1; /* This will make both the text and image take up equal space */
-    padding: 10px; /* Optional: adds some spacing inside each container */
-}
-
-/* For better control, you can also define specific widths */
 .about-text {
-    max-width: 60%; /* Adjust this percentage as needed */
+    flex: 1; /* Gives more space to the text */
+    padding: 0px;
 }
-
-.about-image {
-    max-width: 40%; /* Adjust this percentage as needed */
-    text-align: right; /* Aligns the image to the right */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Stack the text and image vertically on small screens */
-    }
-
-    .about-text, .about-image {
-        max-width: 100%; /* Each takes full width on small screens */
-    }
-}
-
-
-
-
 
 section#about-me {
     padding: 40px 0;
     font-family: IBM Plex Mono;
     font-weight: 400;
-    align-items: center;
+    margin-left: 75px;
+    max-width: 700px;
 }
 
 section#about-me h2 {
@@ -185,3 +190,4 @@ section h2 {
         margin: 10px 0; /* Adjust margin to only top and bottom */
     }
 }
+
