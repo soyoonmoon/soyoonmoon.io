@@ -148,7 +148,7 @@ section h2 {
 }
 
 .box-container {
-    width: calc(50% - 20px); /* Now 50% to have 2 boxes per row */
+    width: calc(50% - 20px);
     margin: 10px;
     box-sizing: border-box;
     text-align: center;
@@ -157,29 +157,14 @@ section h2 {
 .box {
     background-color: #f3f3f3;
     border: 1px solid #ddd;
-    /* Maintain the aspect ratio as a square */
-    padding-top: calc(50% - 20px); /* Adjust this value to keep the square aspect ratio */
     position: relative;
+    overflow: hidden; /* This ensures the image does not overflow the box */
 }
 
-/* Content inside the box */
-.box-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; /* Padding for the content */
-}
-
-/* Style for the explanation text */
-.box-explanation {
-    margin-top: 10px; /* Space above the explanation text */
-    font-size: 16px; /* Smaller font size for the explanation text */
-    color: #666; /* A lighter text color for explanations */
+.box img {
+    width: 100%; /* This makes the image fill the width of the box */
+    height: auto; /* This maintains the aspect ratio of the image */
+    display: block; /* Removes any extra space below the image */
 }
 
 /* Responsive adjustment for smaller screens, if needed */
