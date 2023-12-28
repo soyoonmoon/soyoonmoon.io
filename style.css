@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 .big-intro {
     /* width: 500px; Adjust as needed */
     height: 600px; /* Adjust as needed */
@@ -176,3 +181,30 @@ section h2 {
     }
 }
 
+#skills {
+    padding: 20px;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.skill {
+    width: calc(25% - 10px); /* Four items per row */
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.skill img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 14px;
+    margin: 0;
+}

@@ -1,7 +1,7 @@
 const images = [
-  'profile_pic.jpg',
-  'intelligentia.JPG',
-  'strawberry.JPG',
+  'img/profile_pic.jpg',
+  'img/intelligentia.JPG',
+  'img/strawberry.JPG',
   // Add more images as needed
 ];
 
