@@ -3,7 +3,7 @@ const images = [
   'img/pride.png',
   'img/point.png',
   'img/eto.JPG',
-  'img/pride2.PNG',
+  'img/pridee.PNG',
   'img/strawberry.JPG',
 ];
 
