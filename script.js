@@ -1,8 +1,10 @@
 const images = [
   'img/profile_pic.jpg',
-  'img/intelligentia.JPG',
+  'img/pride.png',
+  'img/point.png',
+  'img/eto.JPG',
+  'img/pride2.PNG',
   'img/strawberry.JPG',
-  // Add more images as needed
 ];
 
 const imgElement = document.getElementById('main-photo');

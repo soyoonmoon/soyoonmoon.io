@@ -14,6 +14,7 @@ html{
     margin-left: 50px;
     width: 450px;
     height: 500px;
+    object-fit: cover;
 }
 
 section#about-me h2 {
